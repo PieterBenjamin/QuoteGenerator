@@ -8,5 +8,7 @@ json_data=open(str(os.path.expanduser('~/gitrepos/QuoteGenerator/quote_generator
 data = json.loads(json_data)
 
 quoteIndex = random.randint(0, len(data) + 1)
+print()
 print(data[quoteIndex]['quote'])
 print("-" + data[quoteIndex]['author'] + ", " + data[quoteIndex]['source'])
+print()
