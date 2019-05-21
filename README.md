@@ -1,6 +1,5 @@
 ![raw text](https://github.com/PieterBenjamin/QuoteGenerator/blob/master/Quote%20Generator%20sample.png)  
 
-**Note: you will need python 3.0 installed**  
 This is a fun quote generator designed for anyone with a bash terminal. To get this working, clone the project, and edit the file `quotegenerator.py` 
 
 https://github.com/PieterBenjamin/QuoteGenerator/blob/master/quote_generator/quotegenerator.py#L5-L7
