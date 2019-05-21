@@ -7,8 +7,9 @@ https://github.com/PieterBenjamin/QuoteGenerator/blob/master/quote_generator/quo
 so that the filepath (from your home directory to the directory TolkienQuotesJson) is correct.
 You should only need to edit the `~/gitrepos/` portion.
 
-From there, add the following two lines to your `.bash_profile`:  
-`var=$(ls -1 ~/gitrepos/QuoteGenerator/quote_generator/TolkienQuotesJson | wc -l)
+From there, add the following two lines (with the appropriate file path) to your `.bash_profile`:  
+
+`var=$(ls -1 ~/gitrepos/QuoteGenerator/quote_generator/TolkienQuotesJson | wc -l)  
 python ~/gitrepos/QuoteGenerator/quote_generator/quotegenerator.py $var`
 
 *In a previous version of this project, 50 quotes were included in a single json file. These quotes were  
