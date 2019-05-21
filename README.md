@@ -9,8 +9,8 @@ You should only need to edit the `~/gitrepos/` portion.
 
 From there, add the following two lines (with the appropriate file path) to your `.bash_profile`:  
 
-`var=$(ls -1 ~/gitrepos/QuoteGenerator/quote_generator/TolkienQuotesJson | wc -l)  
-python ~/gitrepos/QuoteGenerator/quote_generator/quotegenerator.py $var`
+`var=$(ls -1 ~/gitrepos/QuoteGenerator/quote_generator/TolkienQuotesJson | wc -l)`  
+`python ~/gitrepos/QuoteGenerator/quote_generator/quotegenerator.py $var`
 
 *In a previous version of this project, 50 quotes were included in a single json file. These quotes were  
 higher quality (with a source and all in English)*
