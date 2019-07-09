@@ -5,7 +5,7 @@ import random
 import textwrap
 
 # Put the absolute (or relative) pathway to the json quote file.
-path_to_json_file = '~/gitrepos/QuoteGenerator/quote_generator/TolkienQuotesJson/TolkienQuotes-%s.json' % str(random.randint(0, int(sys.argv[1])))
+path_to_json_file = '~/gitrepos/QuoteGenerator/quote_generator/TolkienQuotesJson/TolkienQuotes-%s.json' % str(random.randint(1, int(sys.argv[1])))
 # Python handles opening up the json
 json_data   = open(str(os.path.expanduser(path_to_json_file))).read()
 quote_data  = json.loads(json_data)
