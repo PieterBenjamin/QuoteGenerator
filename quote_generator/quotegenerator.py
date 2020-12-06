@@ -3,6 +3,8 @@ import sys
 import json
 import random
 import textwrap
+from termcolor import colored, cprint
+
 
 # Put the absolute (or relative) pathway to the json quote file.
 path_to_json_file = '~/gitrepos/QuoteGenerator/quote_generator/TolkienQuotesJson/TolkienQuotes-%s.json' % str(random.randint(1, int(sys.argv[1])))
@@ -21,6 +23,6 @@ wrapped_quote = textwrap.wrap(quote[1 : len(quote) - 1], quote_width)
 
 # Printing the actual quote.
 for quoteSegment in wrapped_quote:
-    print(quoteSegment)
+    cprint(quoteSegment, 'cyan', attrs=['bold'])
 # Printing the author/source.
 print("")
